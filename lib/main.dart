@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'screens/puzzle_screen.dart';
+import 'screens/startup_screen.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();
-  // Firebase initialization will go here later
   runApp(const ShukerApp());
 }
 
@@ -17,9 +16,9 @@ class ShukerApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primarySwatch: Colors.blueGrey,
-        scaffoldBackgroundColor: Colors.transparent, // Crucial for global background image
+        scaffoldBackgroundColor: Colors.transparent,
       ),
-      home: const PuzzleScreen(),
+      home: const StartupScreen(), // Changed to StartupScreen
     );
   }
 }
